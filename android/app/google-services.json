@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "371643257508",
+    "project_id": "avatar1-d7e17",
+    "storage_bucket": "avatar1-d7e17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371643257508:android:cd46637c1be886aa2c4c31",
+        "android_client_info": {
+          "package_name": "com.dananjay.flutter_revised_avatar_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371643257508-50ltaslgaeo2osf1ds4oamt52mnk9gm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy0hj2_fKoas-d5No9t-T2puNtlmLudjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371643257508-50ltaslgaeo2osf1ds4oamt52mnk9gm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
