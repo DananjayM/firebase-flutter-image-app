@@ -1,4 +1,4 @@
-# flutter_revised_avatar_project
+# Image Management App
 
 A new Flutter project.
 
