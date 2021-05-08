@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_revised_avatar_project/screens/home/globalPage.dart';
+import 'package:flutter_revised_avatar_project/screens/home/aboutPage.dart';
 import 'package:flutter_revised_avatar_project/screens/home/homePage.dart';
 import 'package:flutter_revised_avatar_project/services/auth.dart';
 
@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
 
   static List<Widget> _screens = <Widget>[
     HomeScreen(),
-    GlobalScreen(),
+    AboutScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.people), label: 'Global'),
+          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'About'),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blue[800],

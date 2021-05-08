@@ -45,7 +45,11 @@ class _HomeScreenState extends State<HomeScreen> {
         },
       );
       AlertDialog alert = AlertDialog(
-        content: Image.file(image),
+        content: image != null
+            ? Image.file(image)
+            : Center(
+                child: Text("No image selected"),
+              ),
         actions: [
           cancelButton,
           continueButton,
@@ -91,6 +95,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             DocumentSnapshot orderData =
                                 imageSnapshot.data.docs[index];
                             return ImageCard(
+                                id: orderData.id,
+                                index: index,
                                 user: orderData.data()['user'],
                                 img: orderData.data()['image']);
                           },

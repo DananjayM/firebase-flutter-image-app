@@ -52,6 +52,16 @@ class DatabaseService {
     return returnURL;
   }
 
+  Future removeImage(String id, String img, String uid) async {
+    await FirebaseFirestore.instance
+        .collection("images")
+        .doc(uid)
+        .collection("userImages")
+        .doc(id)
+        .delete();
+    await FirebaseStorage.instance.refFromURL(img).delete();
+  }
+
   //image list from snapshot
   List<imageModel> _imageModelListFromSnapshot(QuerySnapshot images) {
     FirebaseFirestore.instance.collection("images").get().then((images) {
